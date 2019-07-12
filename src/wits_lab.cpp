@@ -13,7 +13,7 @@
 using namespace std;
 chrono::time_point<chrono::system_clock> start, end_time;
 
-long WITS::permutasi(int n){
+float WITS::permutasi(int n){
     if (n<=1) {
         return 1;
     }
@@ -282,7 +282,7 @@ complex<double> GSM::QAM16(int n){
 }
 
 vector<vector<int>> GSM::generate_order_bin(int bit_lenght){
-    int N[bit_lenght];
+    int* N = new int[bit_lenght];
     fill_n(N,bit_lenght,1); //Inizialitation 1
     int number_bit=pow(2,bit_lenght);
     vector<vector<int>> result(number_bit,vector<int>(bit_lenght,0)); // x=zeros(2^bit,bit_lenght) in integer
