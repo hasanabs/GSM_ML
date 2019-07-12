@@ -10,7 +10,7 @@ using namespace std;
 
 class WITS{
     public:
-        long permutasi(int n);
+        float permutasi(int n);
         long kombinasi (int x, int y);
         vector<vector<int>> matrix_bitgenerator(int row,int column);
         vector<vector<int>> nchoosek(int x,int y);
